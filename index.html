@@ -1,13 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Itinderjot Singh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Itinderjot Singh, PhD</title>
+  <meta name="description" content="Postdoctoral Fellow at Colorado State University">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f8fa;
+      --text: #1d2733;
+      --muted: #56657a;
+      --accent: #245f8f;
+      --rule: #d5dde6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141a21;
+        --text: #e3e8ee;
+        --muted: #9aa8b8;
+        --accent: #7fb3de;
+        --rule: #2c3643;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+      font-size: 1.125rem;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 5rem;
+    }
+    header {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 600;
+      line-height: 1.15;
+      margin: 0 0 0.4rem;
+    }
+    .role { margin: 0; color: var(--muted); }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 2.5rem 0 0.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+    p { margin: 0 0 1rem; }
+    ul { margin: 0; padding-left: 1.2rem; }
+    li { margin-bottom: 0.35rem; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; }
+    footer { margin-top: 3rem; font-size: 0.9rem; color: var(--muted); }
+    @media (max-width: 560px) {
+      header { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+      header img { width: 128px; height: 128px; }
+      h1 { font-size: 1.9rem; }
+      main { padding-top: 2.5rem; }
+    }
+  </style>
 </head>
-<body style="max-width:700px;margin:40px auto;font-family:sans-serif;line-height:1.5">
-  <h1>Itinderjot Singh, PhD</h1>
-  <p>Postdoctoral Fellow, Colorado State University</p>
-  <p>Convective dynamics (theory, modeling, and satellite-based observations), numerical weather prediction, spatial scaling of atmospheric fields</p>
-  <p><a href="cv.pdf">CV (PDF)</a> · <a href="https://orcid.org/0000-0001-5981-2538">ORCID</a> · <a href="https://scholar.google.com/citations?user=aXuw_vQAAAAJ&hl=en">Google Scholar</a></p>
+<body>
+  <main>
+    <header>
+      <!-- The file name here must match your uploaded photo exactly (case-sensitive) -->
+      <img src="photo.jpg" alt="Photo of Your Name">
+      <div>
+        <h1>Itinderjot Singh, PhD</h1>
+        <p class="role">Postdoctoral Fellow, Department of Atmospheric Science<br>Colorado State University</p>
+      </div>
+    </header>
+
+    <p>I work on the NASA INCUS (INvestigation of Convective UpdraftS) mission, combining high-resolution numerical simulations of deep moist convection with satellite radar observations.</p>
+
+    <h2>Research interests</h2>
+    <ul>
+      <li>Convective updraft dynamics: theory, modeling, and satellite observations</li>
+      <li>Numerical weather prediction</li>
+      <li>Spatial variability and scaling of atmospheric fields</li>
+    </ul>
+
+    <h2>Links</h2>
+    <ul class="links">
+      <li><a href="cv.pdf">CV (PDF)</a></li>
+      <li><a href="https://orcid.org/0000-0001-5981-2538">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=aXuw_vQAAAAJ&hl=en">Google Scholar</a></li>
+      <li><a href="https://incus.colostate.edu">INCUS mission</a></li>
+      <li><a href="mailto:I.Singh [at] colostate.edu">Email</a></li>
+    </ul>
+
+    <footer>Last updated September 2026</footer>
+  </main>
 </body>
 </html>
